@@ -1,0 +1,108 @@
+/* Professional theme with blue, black, and white */
+.dashboard-container {
+  color: #FFFFFF; /* White text */
+  padding: 2rem;
+  min-height: 100vh;
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern typography */
+}
+
+/* Dashboard Title */
+.dashboard-title {
+  color: #00D4FF; /* Light blue */
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for readability */
+}
+
+/* Navigation Bar */
+.nav-bar {
+  background-color: #FFFFFF; /* White background */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Navigation Links */
+.nav-link {
+  color: #00D4FF; /* Light blue */
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: #00D4FF; /* Light blue background on hover */
+  color: #000000; /* Black text on hover */
+  transform: scale(1.05);
+}
+
+/* Error Boundary Message */
+.error-message {
+  background-color: #FFFFFF; /* White background for contrast */
+  color: #00D4FF; /* Light blue for errors (visible against white) */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid #00D4FF; /* Light blue border */
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 28rem;
+}
+
+/* Login Prompt */
+.login-prompt {
+  color: #00D4FF; /* Light blue text */
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+/* Default Route Message */
+.default-message {
+  color: #FFFFFF; /* White text */
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 1.5rem;
+  background-color: rgba(0, 212, 255, 0.1); /* Subtle blue background */
+  border-radius: 0.5rem;
+  border: 1px solid #00D4FF; /* Light blue border */
+  max-width: 28rem;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .dashboard-container {
+    padding: 1rem;
+  }
+
+  .dashboard-title {
+    font-size: 2rem;
+  }
+
+  .nav-bar {
+    padding: 0.75rem;
+    gap: 1rem;
+  }
+
+  .nav-link {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  .error-message,
+  .login-prompt,
+  .default-message {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}

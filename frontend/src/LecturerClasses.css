@@ -1,0 +1,117 @@
+/* Limkokwing-inspired theme with black, white, and gold */
+.lecturer-classes-container {
+  background-color: #000000; /* Black background */
+  color: #FFFFFF; /* White text */
+  padding: 2rem;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Section Title */
+.section-title {
+  color: #FFD700; /* Gold */
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+/* Error Message */
+.error-message {
+  background-color: #FFFFFF; /* White background for contrast */
+  color: #FF0000; /* Red for errors */
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #FF0000;
+  text-align: center;
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* No Data Message */
+.no-data {
+  color: #FFFFFF; /* White text */
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 1.5rem;
+  background-color: rgba(255, 215, 0, 0.1); /* Subtle gold background */
+  border-radius: 0.5rem;
+  border: 1px solid #FFD700; /* Gold border */
+  max-width: 28rem;
+  margin: 0 auto;
+}
+
+/* Table */
+.classes-table {
+  background-color: #FFFFFF; /* White table background */
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 2rem;
+  border: 2px solid #FFD700; /* Gold border */
+}
+
+/* Table Header */
+.table-header {
+  background-color: #000000; /* Black header background */
+}
+
+.table-cell {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #FFD700; /* Gold separator */
+}
+
+.table-header .table-cell {
+  color: #FFD700; /* Gold text */
+  font-weight: bold;
+}
+
+/* Table Row */
+.table-row:nth-child(even) {
+  background-color: #F5F5F5; /* Light gray for alternate rows */
+}
+
+.table-row:hover {
+  background-color: #FFD700; /* Gold on row hover */
+  color: #000000; /* Black text for contrast */
+}
+
+/* Loading Container */
+.loading-container {
+  color: #FFD700; /* Gold text */
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .lecturer-classes-container {
+    padding: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .table-cell {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  .error-message, .no-data {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .loading-container {
+    font-size: 1.25rem;
+    padding: 1rem;
+  }
+}

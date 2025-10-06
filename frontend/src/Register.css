@@ -1,0 +1,117 @@
+/* Professional theme with focus on form alignment */
+.register-container {
+  color: #FFFFFF; /* White text */
+  padding: 2rem;
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern typography */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 0; /* Remove full-screen height */
+  height: auto; /* Allow natural height based on content */
+}
+
+/* Heading */
+h2 {
+  color: hsl(247, 100%, 50%); /* Gold (to be replaced if needed later) */
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.75rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Error Message */
+.error-message {
+  background-color: #FFFFFF; /* White background for contrast */
+  color: #FF0000; /* Red for errors (to be replaced if needed later) */
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #FF0000;
+  width: 100%;
+  max-width: 28rem; /* max-w-md */
+  text-align: center;
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Form Group */
+.form-group {
+  background-color: #FFFFFF; /* White form background */
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  max-width: 28rem; /* max-w-md */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem; /* Increased gap for better spacing */
+  align-items: stretch; /* Ensure inputs stretch to fill width */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Inputs and Select */
+.form-input {
+  background-color: #000000; /* Black input background */
+  color: #FFFFFF; /* White text */
+  border: 2px solid #0008ff; /* Gold border (to be replaced if needed later) */
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+  width: 100%; /* Ensure full width within form-group */
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #FFFFFF; /* White border on focus */
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.5); /* Gold glow (to be replaced if needed later) */
+}
+
+/* Button */
+.submit-button {
+  background-color: #FFD700; /* Gold button (to be replaced if needed later) */
+  color: #000000; /* Black text */
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%; /* Match input width for consistency */
+  text-align: center; /* Center text within button */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.submit-button:hover {
+  background-color: #FFFFFF; /* White on hover */
+  color: #000000;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .register-container {
+    padding: 1rem;
+  }
+
+  .form-group {
+    padding: 1rem;
+    gap: 1rem; /* Slightly reduced gap for mobile */
+  }
+
+  .form-input {
+    font-size: 0.875rem;
+    padding: 0.625rem; /* Adjusted padding for smaller screens */
+  }
+
+  .submit-button {
+    padding: 0.625rem 1.25rem; /* Adjusted padding for smaller screens */
+  }
+
+  .error-message {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+}

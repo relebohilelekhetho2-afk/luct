@@ -1,0 +1,191 @@
+/* prlstyle.css */
+
+/* General Container Styling */
+.component-container {
+  color: #FFFFFF; /* White text */
+  padding: 2rem;
+  min-height: 100vh;
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern typography */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Section Titles */
+.section-title {
+  color: #00D4FF; /* Light blue */
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); /* Enhanced shadow for contrast */
+}
+
+/* Error Messages */
+.error-message {
+  background-color: #FFFFFF; /* White background for contrast */
+  color: #00D4FF; /* Light blue for errors */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid #00D4FF;
+  text-align: center;
+  margin: 1rem 0;
+  max-width: 28rem;
+}
+
+/* Loading State */
+.loading-container {
+  color: #00D4FF; /* Light blue */
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+/* No Data Message */
+.no-data {
+  color: #FFFFFF; /* White text */
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 1rem;
+  background-color: rgba(0, 212, 255, 0.1); /* Subtle blue background */
+  border-radius: 0.5rem;
+  border: 1px solid #00D4FF;
+  max-width: 28rem;
+  margin: 0 auto;
+}
+
+/* Tables */
+.prl-table {
+  width: 100%;
+  max-width: 48rem; /* Limit table width for readability */
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #FFFFFF; /* White background for table */
+  color: #000000; /* Black text */
+}
+
+.prl-table th,
+.prl-table td {
+  padding: 0.75rem;
+  border: 1px solid #00D4FF; /* Light blue border */
+  text-align: left;
+}
+
+.prl-table th {
+  background-color: #00D4FF; /* Light blue header */
+  color: #000000; /* Black text */
+  font-weight: 600;
+}
+
+.prl-table tr:nth-child(even) {
+  background-color: rgba(0, 212, 255, 0.1); /* Subtle blue for even rows */
+}
+
+/* Forms */
+.form-container {
+  max-width: 28rem; /* Consistent width */
+  margin: 0 auto; /* Center horizontally */
+  padding: 1rem;
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column;
+  align-items: center; /* Center items vertically */
+  gap: 1rem; /* Consistent spacing between elements */
+}
+
+.form-group,
+.form-field {
+  width: 100%; /* Full width within container */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Spacing between label and input */
+}
+
+.form-label {
+  color: #00D4FF; /* Light blue */
+  font-weight: 600;
+  text-align: left;
+  width: 100%;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #00D4FF;
+  border-radius: 0.25rem;
+  background-color: #FFFFFF; /* White background */
+  color: #000000; /* Black text */
+  font-size: 1rem;
+  box-sizing: border-box; /* Ensure padding doesn’t affect width */
+  text-align: left;
+}
+
+.form-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #00D4FF; /* Light blue */
+  color: #000000; /* Black text */
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  max-width: 12rem; /* Limit max width for aesthetics */
+  margin: 0 auto; /* Center the button */
+}
+
+.form-button:hover {
+  background-color: #00B4DF; /* Darker blue on hover */
+  transform: scale(1.05);
+}
+
+/* Success Message */
+.success-message {
+  background-color: #FFFFFF; /* White background */
+  color: #00D4FF; /* Light blue */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid #00D4FF;
+  text-align: center;
+  margin: 1rem 0;
+  max-width: 28rem;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .component-container {
+    padding: 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .prl-table th,
+  .prl-table td {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  .form-container {
+    padding: 0.5rem;
+  }
+
+  .form-input,
+  .form-select,
+  .form-textarea,
+  .form-button {
+    font-size: 0.875rem;
+    padding: 0.4rem;
+  }
+
+  .error-message,
+  .success-message,
+  .no-data,
+  .loading-container {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+}

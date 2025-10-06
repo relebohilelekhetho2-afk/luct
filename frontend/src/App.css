@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('C:\Users\iiii\Desktop\Reports\frontend\public/background.jpg') no-repeat center center fixed; /* Overlay gradient with image */
+  background-size: cover; /* Ensures the image covers the entire background */
+  color: #FFFFFF; /* White text */
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern typography */
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+.nav-bar {
+  background: linear-gradient(90deg, #000000 0%, #16213E 100%); /* Black to dark blue gradient */
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(26, 26, 46, 0.2); /* Dark blue shadow */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navigation Links Container */
+.nav-links, .auth-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* Navigation Links */
+.nav-link {
+  color: #00D4FF; /* Light blue */
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.375rem;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: #00D4FF; /* Light blue background on hover */
+  color: #000000; /* Black text on hover */
+  transform: translateY(-2px);
+}
+
+/* Logout Button */
+.logout-button {
+  background-color: #00D4FF; /* Light blue button */
+  color: #000000; /* Black text */
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #FFFFFF; /* White on hover */
+  color: #000000; /* Black text */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.5); /* Light blue shadow */
+}
+
+/* Loading Container */
+.loading-container {
+  color: #00D4FF; /* Light blue text */
+  text-align: center;
+  font-size: 1.75rem;
+  padding: 3rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  background: rgba(0, 0, 0, 0.7); /* Dark overlay for readability */
+}
+
+/* Home Page Container */
+.home-container {
+  padding: 4rem 2rem;
+  text-align: center;
+  min-height: calc(100vh - 4rem); /* Adjust for nav bar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+}
+
+/* Home Page Title */
+.home-title {
+  color: #00D4FF; /* Light blue */
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 6px rgba(0, 212, 255, 0.4); /* Light blue shadow */
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .nav-bar {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .nav-links, .auth-links {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .nav-link, .logout-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .home-container {
+    padding: 2rem 1rem;
+  }
+
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .loading-container {
+    font-size: 1.5rem;
+    padding: 2rem;
+  }
+}

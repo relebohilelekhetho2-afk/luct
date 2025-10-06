@@ -1,0 +1,279 @@
+/* plstyle.css */
+
+/* General Container Styling */
+.component-container {
+  color: #FFFFFF; /* White text */
+  padding: 2rem;
+  min-height: 100vh;
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern typography */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out; /* Smooth fade-in */
+}
+
+/* Keyframes for Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Section Titles */
+.section-title {
+  color: #00D4FF; /* Light blue */
+  font-size: 2.5rem;
+  font-weight: 800; /* Bolder for elegance */
+  margin-bottom: 1.75rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px; /* Fancy spacing */
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
+}
+
+/* Error Messages */
+.error-message {
+  background-color: rgba(255, 0, 0, 0.1); /* Subtle red tint */
+  color: #FF0000; /* Red for errors */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid #FF0000; /* Outline */
+  text-align: center;
+  margin: 1rem 0;
+  max-width: 28rem;
+  box-sizing: border-box;
+  animation: shake 0.5s ease-in-out; /* Shake animation */
+}
+
+/* Success Messages */
+.success-message {
+  background-color: rgba(0, 255, 0, 0.1); /* Subtle green tint */
+  color: #00FF00; /* Green for success */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid #00FF00; /* Outline */
+  text-align: center;
+  margin: 1rem 0;
+  max-width: 28rem;
+  box-sizing: border-box;
+}
+
+/* Keyframes for Shake Animation */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+/* Loading State */
+.loading-container {
+  color: #00D4FF; /* Light blue */
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+/* No Data Message */
+.no-data {
+  color: #FFFFFF; /* White text */
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 1rem;
+  background-color: rgba(0, 212, 255, 0.1); /* Subtle blue background */
+  border-radius: 0.5rem;
+  border: 1px solid #00D4FF; /* Outline */
+  max-width: 28rem;
+  margin: 0 auto;
+}
+
+/* Forms Grid Layout */
+.form-container {
+  max-width: 100%; /* Full width for horizontal arrangement */
+  margin: 0 auto; /* Center horizontally */
+  padding: 1.5rem;
+  display: grid; /* Use CSS Grid */
+  grid-template-columns: repeat(4, 1fr); /* Four equal columns for forms */
+  gap: 1.5rem; /* Consistent spacing */
+  background-color: rgba(255, 255, 255, 0.1); /* Translucent background */
+  border-radius: 1rem; /* Softer edges */
+  border: 2px solid #00D4FF; /* Outline */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  backdrop-filter: blur(5px); /* Fancy glass effect */
+}
+
+.form-section {
+  display: none; /* Hidden by default */
+  width: 100%;
+  transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.form-section.active {
+  display: block; /* Show on active */
+  opacity: 1;
+}
+
+.form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem; /* Increased spacing */
+}
+
+.form-label {
+  color: #00D4FF; /* Light blue */
+  font-weight: 600;
+  text-align: left;
+  width: 100%;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  background-color: rgba(255, 255, 255, 0.2); /* Translucent background */
+  color: #FFFFFF; /* White text */
+  border: 2px solid #00D4FF; /* Light blue outline */
+  border-radius: 0.5rem; /* Softer edges */
+  padding: 0.75rem;
+  width: 100%;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  box-sizing: border-box;
+  outline: none; /* Remove default outline */
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  border-color: #FFFFFF; /* White border on focus */
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.6); /* Glowing effect */
+  transform: scale(1.02); /* Slight zoom */
+}
+
+.form-button {
+  background: linear-gradient(90deg, #00D4FF, #4B0082); /* Gradient button */
+  color: #FFFFFF; /* White text */
+  font-weight: 700; /* Bolder weight */
+  padding: 0.85rem 1.75rem;
+  border-radius: 0.5rem;
+  border: 2px solid #FFFFFF; /* Outline */
+  cursor: pointer;
+  transition: background-position 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 12rem; /* Limit max width */
+  margin: 0 auto; /* Center button */
+  position: relative; /* For gradient animation */
+  overflow: hidden; /* Contain gradient animation */
+}
+
+.form-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  animation: shine 2s infinite;
+}
+
+@keyframes shine {
+  0% { left: -100%; }
+  20% { left: 100%; }
+  100% { left: 100%; }
+}
+
+.form-button:hover {
+  background-position: 100% 0; /* Gradient shift */
+  transform: scale(1.05); /* Zoom effect */
+  box-shadow: 0 6px 12px rgba(0, 212, 255, 0.5); /* Enhanced shadow */
+}
+
+.checkbox-container {
+  border: 1px solid #00D4FF;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  margin: 0.25rem 0;
+}
+
+.checkbox-item input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+/* Tables - Visible by default */
+.pl-table {
+  width: 100%;
+  max-width: 48rem; /* Limit table width */
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #FFFFFF; /* White background */
+  color: #000000; /* Black text */
+  border: 2px solid #00D4FF; /* Outline */
+}
+
+.pl-table th,
+.pl-table td {
+  padding: 0.75rem;
+  border: 1px solid #00D4FF; /* Light blue border */
+  text-align: left;
+}
+
+.pl-table th {
+  background-color: #00D4FF; /* Light blue header */
+  color: #000000; /* Black text */
+  font-weight: 600;
+}
+
+.pl-table tr:nth-child(even) {
+  background-color: rgba(0, 212, 255, 0.1); /* Subtle blue */
+}
+
+.pl-table tr:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Hover effect */
+  transition: background-color 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .component-container {
+    padding: 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .form-container {
+    grid-template-columns: 1fr; /* Stack forms vertically on mobile */
+    padding: 1rem;
+    gap: 1.25rem;
+  }
+
+  .form-input,
+  .form-select,
+  .form-textarea,
+  .form-button {
+    font-size: 0.875rem;
+    padding: 0.65rem;
+  }
+
+  .error-message,
+  .success-message,
+  .no-data,
+  .loading-container {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+
+  .pl-table th,
+  .pl-table td {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+}

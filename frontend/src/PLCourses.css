@@ -1,0 +1,177 @@
+/* Limkokwing-inspired theme with black, white, and gold */
+.pl-courses-container {
+  background-color: #000000; /* Black background */
+  color: #FFFFFF; /* White text */
+  padding: 2rem;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Headings */
+h2 {
+  color: #FFD700; /* Gold */
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #FFD700; /* Gold */
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  color: #FFFFFF; /* White */
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Error and Success Messages */
+.text-red-500 {
+  background-color: #FFFFFF; /* White background for contrast */
+  color: #FF0000; /* Red for errors */
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #FF0000;
+}
+
+.text-green-500 {
+  background-color: #FFFFFF; /* White background for contrast */
+  color: #008000; /* Green for success */
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #008000;
+}
+
+/* Forms */
+.space-y-4 {
+  background-color: #FFFFFF; /* White form background */
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  max-width: 28rem; /* max-w-md */
+  margin-bottom: 2rem;
+}
+
+input, select, textarea {
+  background-color: #000000; /* Black input background */
+  color: #FFFFFF; /* White text */
+  border: 2px solid #FFD700; /* Gold border */
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+  width: 100%;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #FFFFFF; /* White border on focus */
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.5); /* Gold glow */
+}
+
+textarea {
+  min-height: 6rem;
+  resize: vertical;
+}
+
+/* Buttons */
+button {
+  background-color: #FFD700; /* Gold button */
+  color: #000000; /* Black text */
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+  background-color: #FFFFFF; /* White on hover */
+  color: #000000;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #4B4B4B; /* Darker gray for disabled */
+  color: #FFFFFF;
+  cursor: not-allowed;
+}
+
+/* Checkbox Container */
+.border.p-2.rounded {
+  background-color: #FFFFFF; /* White background for course selection */
+  border: 2px solid #FFD700; /* Gold border */
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+/* Checkboxes */
+input[type="checkbox"] {
+  accent-color: #FFD700; /* Gold checkbox */
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+/* Tables */
+table {
+  background-color: #FFFFFF; /* White table background */
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 2rem;
+  border: 2px solid #FFD700; /* Gold border */
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #FFD700; /* Gold separator */
+}
+
+th {
+  background-color: #000000; /* Black header background */
+  color: #FFD700; /* Gold text */
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #F5F5F5; /* Light gray for alternate rows */
+}
+
+tr:hover {
+  background-color: #FFD700; /* Gold on row hover */
+  color: #000000; /* Black text for contrast */
+}
+
+/* Loading State */
+.p-4:not(.pl-courses-container) {
+  color: #FFD700; /* Gold text for loading */
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .pl-courses-container {
+    padding: 1rem;
+  }
+
+  .space-y-4 {
+    max-width: 100%;
+  }
+
+  table {
+    font-size: 0.875rem;
+  }
+
+  th, td {
+    padding: 0.5rem;
+  }
+}

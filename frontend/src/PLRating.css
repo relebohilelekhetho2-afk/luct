@@ -1,0 +1,82 @@
+/* PLRating.css */
+
+.pl-rating-container {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.pl-rating-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #0000ff;
+}
+
+.pl-rating-error {
+  color: #ff0000;
+  margin-bottom: 1rem;
+}
+
+.pl-rating-submit-section {
+  margin-bottom: 1rem;
+}
+
+.pl-rating-submit-title {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  color: #0000ff;
+}
+
+.pl-rating-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pl-rating-input,
+.pl-rating-textarea {
+  padding: 0.5rem;
+  border: 1px solid #0000ff;
+  border-radius: 0.25rem;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.pl-rating-button {
+  padding: 0.5rem;
+  background-color: #0000ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.pl-rating-button:hover {
+  background-color: #0000dd;
+}
+
+.pl-rating-no-ratings {
+  color: #000000;
+}
+
+.pl-rating-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #0000ff;
+}
+
+.pl-rating-table th {
+  padding: 0.5rem;
+  background-color: #0000ff;
+  color: #ffffff;
+  border: 1px solid #0000ff;
+}
+
+.pl-rating-table td {
+  padding: 0.5rem;
+  border: 1px solid #0000ff;
+  color: #000000;
+  background-color: #ffffff;
+}

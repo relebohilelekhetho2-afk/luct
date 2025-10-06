@@ -1,0 +1,157 @@
+/* Limkokwing-inspired theme with black, white, and gold */
+.pl-assign-faculty-container {
+  background-color: #000000; /* Black background */
+  color: #FFFFFF; /* White text */
+  padding: 2rem;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Section Title */
+.section-title {
+  color: #FFD700; /* Gold */
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+/* Error and Success Messages */
+.error-message {
+  background-color: #FFFFFF; /* White background for contrast */
+  color: #FF0000; /* Red for errors */
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #FF0000;
+  text-align: center;
+  max-width: 28rem;
+  width: 100%;
+}
+
+.success-message {
+  background-color: #FFFFFF; /* White background for contrast */
+  color: #008000; /* Green for success */
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #008000;
+  text-align: center;
+  max-width: 28rem;
+  width: 100%;
+}
+
+/* Form Group */
+.form-group {
+  background-color: #FFFFFF; /* White form background */
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  max-width: 28rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Form Field */
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form Label */
+.form-label {
+  color: #000000; /* Black for contrast on white form */
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Inputs and Select */
+.form-input {
+  background-color: #000000; /* Black input background */
+  color: #FFFFFF; /* White text */
+  border: 2px solid #FFD700; /* Gold border */
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+  width: 100%;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #FFFFFF; /* White border on focus */
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.5); /* Gold glow */
+}
+
+.form-input:disabled {
+  background-color: #4B4B4B; /* Dark gray for disabled */
+  color: #FFFFFF;
+  border-color: #FFD700;
+  cursor: not-allowed;
+}
+
+/* Button */
+.submit-button {
+  background-color: #FFD700; /* Gold button */
+  color: #000000; /* Black text */
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+  background-color: #FFFFFF; /* White on hover */
+  color: #000000;
+  transform: scale(1.05);
+}
+
+/* Loading Container */
+.loading-container {
+  color: #FFD700; /* Gold text */
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .pl-assign-faculty-container {
+    padding: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .form-group {
+    padding: 1rem;
+  }
+
+  .form-input,
+  .form-label {
+    font-size: 0.875rem;
+  }
+
+  .error-message,
+  .success-message {
+    font-size: 0.875rem;
+    padding: 0.5rem;
+  }
+
+  .loading-container {
+    font-size: 1.25rem;
+    padding: 1rem;
+  }
+}
